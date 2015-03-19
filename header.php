@@ -10,26 +10,5 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<section class="container"></section>
-		
 		<header>
-			
-			<nav class="row" role="navigation">
-				
-				<div class="large-4 columns">
-					<h1><a href="<?php bloginfo('home_url'); ?>">DH Estates</a></h1>
-				</div>
-				
-				<div class="large-8 columns">
-					
-					<ul class="menu inline-list">
-
-	<?php wp_list_pages('sort_column=menu_order&title_li=&depth=1&exclude=22'); ?>
-
-					</ul>
-
-				</div>
-				
-			</nav>
-			
 		</header>

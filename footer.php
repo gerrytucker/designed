@@ -1,27 +1,24 @@
 
-		<footer>
-			
-			<div class="row">
-				
-				<div class="large-6 columns">
-					
-					<ul class="colophon inline-list">
-						
-<?php wp_list_pages('sort_column=menu_order&title_li=&depth=2&child_of=22'); ?>
-						
-					</ul>
-					
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 s12">
+						<p>Designer, Web Designer, Bald</p>
+					</div>
+					<div class="col l4 s12">
+					</div>
+					<div class="col l4 s12">
+						<?php
+						$email = "designed@markwalling.co.uk";
+						if(function_exists('eos_obfuscate')) {
+							echo eos_obfuscate(array('email' => $email, 'link_title' => 'designed@markwalling.co.uk'));
+						} else {
+							echo $email;
+						}
+						?>
+					</div>
 				</div>
-				
-				<div class="large-6 columns">
-					
-					<ul class="inline-list">
-					</ul>
-					
-				</div>
-				
 			</div>
-			
 		</footer>
 
 		<?php wp_footer(); ?>
