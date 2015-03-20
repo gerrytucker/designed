@@ -1,5 +1,22 @@
 <?php
 
+function change_user_contact_information( $fields )
+{
+    unset($fields['aim']);
+    unset($fields['yim']);
+    unset($fields['jabber']);
+
+    $fields['twitter'] = __('Twitter');
+    $fields['facebook'] = __('Facebook URL');
+    $fields['googleplus'] = __('Google+ URL');
+    $fields['instagram'] = __('Linkedin');
+    $fields['pinterest'] = __('Pinterest');
+    $fields['youtube'] = __('YouTube');
+
+    return $fields;
+}
+add_filter('user_contactmethods', 'change_user_contact_information');
+
 // Remove unnecessary stuff from header
 remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
 remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
