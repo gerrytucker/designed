@@ -31,7 +31,7 @@
 						<p class="white-text">Designer, Web Designer, Bald</p>
 					</div>
 					<div class="col l4 offset-l4 s12">
-						<p class="white-text">
+						<p>
 						<?php
 						$email = "designed@markwalling.co.uk";
 						if(function_exists('eos_obfuscate')) {
