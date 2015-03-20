@@ -5,9 +5,7 @@
 					<div class="col l4 s12">
 						<p class="white-text">Designer, Web Designer, Bald</p>
 					</div>
-					<div class="col l4 s12">
-					</div>
-					<div class="col l4 s12">
+					<div class="col l4 offset-l4 s12">
 						<p class="white-text">
 						<?php
 						$email = "designed@markwalling.co.uk";
