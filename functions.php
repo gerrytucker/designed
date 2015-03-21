@@ -43,6 +43,11 @@ function enqueue_theme_scripts() {
 	wp_register_script( 'app', get_template_directory_uri() . '/app.min.js', false, null, true );
   wp_enqueue_script( 'app' );
 
+	$query_args = array(
+		'family' => 'Montserrat:400,700'
+	);
+	wp_register_style('montserrat', add_query_arg($query_args, "//fonts.googleapis.com/css" ), array(), null );
+	
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 }
