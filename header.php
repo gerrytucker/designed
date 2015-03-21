@@ -11,6 +11,12 @@
 	<body <?php body_class(); ?>>
 
 		<nav class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col m4"><h1 class="white=text">Mark Walling</h1></div>
+					<div class="col m8"></div>
+				</div>
+			</div>
 		</nav>
 		
 		<header>
