@@ -47,6 +47,7 @@ function enqueue_theme_scripts() {
 		'family' => 'Montserrat:400,700'
 	);
 	wp_register_style('montserrat', add_query_arg($query_args, "//fonts.googleapis.com/css" ), array(), null );
+	wp_enqueue_style('montserrat');
 	
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
