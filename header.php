@@ -10,14 +10,14 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<nav class="navbar">
+		<section class="navbar">
 			<div class="container">
 				<div class="row">
-					<div class="col m4"><a class="brand" href="<?php bloginfo('home_url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a></div>
+					<div class="col m4"><a class="brand" href="<?php echo get_bloginfo('home_url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a></div>
 					<div class="col m8"></div>
 				</div>
 			</div>
-		</nav>
+		</section>
 		
 		<header>
 		</header>
