@@ -3,44 +3,44 @@
 			<div class="container">
 				<div class="row hide-on-small-only">
 					<div class="col m2 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-twitter"></span></a>
+						<a href="#"><span class="icomoon-twitter"></span></a>
 					</div>
 					<div class="col m2 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-facebook"></span></a>
+						<a href="#"><span class="icomoon-facebook"></span></a>
 					</div>
 					<div class="col m2 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-google-plus"></span></a>
+						<a href="#"><span class="icomoon-google-plus"></span></a>
 					</div>
 					<div class="col m2 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-instagram"></span></a>
+						<a href="#"><span class="icomoon-instagram"></span></a>
 					</div>
 					<div class="col m2 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-pinterest"></span></a>
+						<a href="#"><span class="icomoon-pinterest"></span></a>
 					</div>
 					<div class="col m2 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-youtube"></span></a>
+						<a href="#"><span class="icomoon-youtube"></span></a>
 					</div>
 				</div>
 				<div class="row hide-on-med-and-up">
 					<div class="col s4 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-twitter"></span></a>
+						<a href="#"><span class="icomoon-twitter"></span></a>
 					</div>
 					<div class="col s4 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-facebook"></span></a>
+						<a href="#"><span class="icomoon-facebook"></span></a>
 					</div>
 					<div class="col s4 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-google-plus"></span></a>
+						<a href="#"><span class="icomoon-google-plus"></span></a>
 					</div>
 				</div>
 				<div class="row hide-on-med-and-up">
 					<div class="col s4 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-instagram"></span></a>
+						<a href="#"><span class="icomoon-instagram"></span></a>
 					</div>
 					<div class="col s4 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-pinterest"></span></a>
+						<a href="#"><span class="icomoon-pinterest"></span></a>
 					</div>
 					<div class="col s4 center-align">
-						<a href="#"><span class="grey-text darken-4 icomoon-youtube"></span></a>
+						<a href="#"><span class="icomoon-youtube"></span></a>
 					</div>
 				</div>
 			</div>
