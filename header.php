@@ -14,7 +14,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col m4"><a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a></div>
-					<div class="col m8"></div>
+					<div class="col m8">
+						<ul class="inline-list right">
+							<?php wp_list_pages('title_li='); ?>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
