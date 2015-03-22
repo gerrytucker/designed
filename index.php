@@ -34,7 +34,9 @@ while ($query->have_posts()) : $query->the_post();
 						?>
 					</div>
 <?php
-	if ($count == 1) :
+	if ($count == 3) {
+		$count = 0;
+	}
 ?>
 			
 				</div>
@@ -42,10 +44,6 @@ while ($query->have_posts()) : $query->the_post();
 <?php
 	endif;
 	
-	if ($count == 3) {
-		$count = 0;
-	}
-
 endwhile;
 ?>
 			</div>
