@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 		<header>
-			<div class="container vertical-align">
+			<div class="container valign-wrapper">
 				<div class="row">
 					<div class="col s10 offset-s1 center-align">
 						<p>Hi there, my name is</p>
