@@ -1,8 +1,6 @@
 <?php
 
-if (function_exists('add_theme_support')) {
-	add_theme_support( 'post-thumbnails' );
-}
+add_theme_support( 'post-thumbnails' );
 
 function change_user_contact_information( $fields )
 {
