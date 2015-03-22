@@ -28,7 +28,7 @@ while ($query->have_posts()) : $query->the_post();
 	endif;
 ?>
 
-					<div class="col s12 m4">
+					<div class="work col s12 m4">
 						<?php
 							the_post_thumbnail('medium', array('class' => 'responsive-img'));
 						?>
