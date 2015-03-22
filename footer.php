@@ -21,7 +21,7 @@
 						<a href="#"><span class="grey-text darken-4 icomoon-youtube"></span></a>
 					</div>
 				</div>
-				<div class="row show-on-small">
+				<div class="row hide-on-med-up">
 					<div class="col s4 center-align">
 						<a href="#"><span class="grey-text darken-4 icomoon-twitter"></span></a>
 					</div>
@@ -32,7 +32,7 @@
 						<a href="#"><span class="grey-text darken-4 icomoon-google-plus"></span></a>
 					</div>
 				</div>
-				<div class="row show-on-small">
+				<div class="row hide-on-med-up">
 					<div class="col s4 center-align">
 						<a href="#"><span class="grey-text darken-4 icomoon-instagram"></span></a>
 					</div>
@@ -49,10 +49,10 @@
 		<footer class="page-footer grey darken-4">
 			<div class="container">
 				<div class="row">
-					<div class="col s4 s12">
-						<p class="white-text">Designer, Web Designer, Bald</p>
+					<div class="col m4 s12 center-align">
+						<p class="white-text">A Balding Designer</p>
 					</div>
-					<div class="col s4 offset-s4 s12">
+					<div class="col m4 offset-m4 s12 center-align">
 						<p>
 						<?php
 						$email = "designed@markwalling.co.uk";
