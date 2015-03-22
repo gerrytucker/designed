@@ -1,7 +1,7 @@
 
 		<section class="social grey lighten-5">
 			<div class="container">
-				<div class="row">
+				<div class="row hide-on-small-down">
 					<div class="col m2">
 						<a href="#"><span class="grey-text darken-4 icomoon-twitter"></span></a>
 					</div>
@@ -18,6 +18,28 @@
 						<a href="#"><span class="grey-text darken-4 icomoon-pinterest"></span></a>
 					</div>
 					<div class="col m2">
+						<a href="#"><span class="grey-text darken-4 icomoon-youtube"></span></a>
+					</div>
+				</div>
+				<div class="row show-on-small-down">
+					<div class="col m4">
+						<a href="#"><span class="grey-text darken-4 icomoon-twitter"></span></a>
+					</div>
+					<div class="col m4">
+						<a href="#"><span class="grey-text darken-4 icomoon-facebook"></span></a>
+					</div>
+					<div class="col m4">
+						<a href="#"><span class="grey-text darken-4 icomoon-google-plus"></span></a>
+					</div>
+				</div>
+				<div class="row show-on-small-down">
+					<div class="col m4">
+						<a href="#"><span class="grey-text darken-4 icomoon-instagram"></span></a>
+					</div>
+					<div class="col m4">
+						<a href="#"><span class="grey-text darken-4 icomoon-pinterest"></span></a>
+					</div>
+					<div class="col m4">
 						<a href="#"><span class="grey-text darken-4 icomoon-youtube"></span></a>
 					</div>
 				</div>
