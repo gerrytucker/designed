@@ -50,7 +50,7 @@ function mw_body_class($class) {
 		$class[] = $post_type;
 	}
 	
-	if (get_query_var('page')) === 'about') {
+	if (get_query_var('page') === 'about') {
 		$class[] = 'about';
 	}
 	
