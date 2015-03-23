@@ -1,3 +1,6 @@
+/*
+Template Name: About
+*/
 <?php get_header(); ?>
 
 		<header class="valign-wrapper">
