@@ -29,7 +29,7 @@
 
 				<div class="work col s12 m4">
 				
-					<?php the_post_thumbnail('medium', array('responsive-img')); ?>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('responsive-img')); ?></a>
 					
 				</div>
 					
