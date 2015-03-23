@@ -2,7 +2,7 @@
  * Theme Name: Designed
  * Theme URI: https://github.com/gerrytucker/designed
  * Description: The Designed WordPress theme for Mark Walling.
- * Version: 0.3.9
+ * Version: 0.3.10
  * Author: Gerry Tucker
  * Author URI: http://gerrytucker.co.uk/
  * Text Domain: designed
@@ -6029,6 +6029,8 @@ section.navbar {
     -webkit-transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; }
+    section.navbar a:hover {
+      color: #FFFFFF; }
   section.navbar .inline-list a {
     display: inline-block;
     position: relative;
@@ -6050,7 +6052,7 @@ section.navbar {
       transition: width 0.5s ease, background-color 0.5s ease; }
     section.navbar .inline-list a:hover:after {
       width: 100%;
-      background: #FFFFFF; }
+      background: #1de9b6; }
 
 .home > header {
   padding-top: 75px;
