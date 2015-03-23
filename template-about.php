@@ -1,7 +1,9 @@
+<?php
 /*
 Template Name: About
 */
-<?php get_header(); ?>
+get_header();
+?>
 
 		<header class="valign-wrapper">
 			<div class="container">
