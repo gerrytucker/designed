@@ -27,7 +27,12 @@
 
 			<?php endif; // $count == 0 ?>
 
-
+				<div class="work col s12 m4">
+				
+					<?php the_post_thumbnail('medium', array('responsive-img')); ?>
+					
+				</div>
+					
 			<?php $count++; ?>
 
 			<?php if ($count == 3) : $count = 0; ?>
