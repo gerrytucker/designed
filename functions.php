@@ -43,6 +43,16 @@ function portfolio_post_type() {
 }
 add_action( 'init', 'portfolio_post_type', 0 );
 
+function mw_body_class($class) {
+	$post_type = 'portfolio';
+	
+	if (get_query_var('post_type') === $post_type) {
+		$class[] = $post_type;
+	}
+	return $class;
+}
+add_filter('body_class', 'mw_body_class');
+
 
 function change_user_contact_information( $fields )
 {
