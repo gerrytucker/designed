@@ -49,6 +49,11 @@ function mw_body_class($class) {
 	if (get_query_var('post_type') === $post_type) {
 		$class[] = $post_type;
 	}
+	
+	if (get_query_var('page')) === 'about') {
+		$class[] = 'about';
+	}
+	
 	return $class;
 }
 add_filter('body_class', 'mw_body_class');
