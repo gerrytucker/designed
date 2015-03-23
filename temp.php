@@ -1,6 +1,7 @@
 				
 <?php
 $query = new WP_Query('cat_name=portfolio&order=DESC&orderby=date&posts_per_page=6');
+$count = 0;
 while ($query->have_posts()) : $query->the_post();
 
 <?php if ($count == 0) : ?>
