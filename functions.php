@@ -52,6 +52,8 @@ function mw_body_class($class) {
 	
 	if (get_query_var('pagename') === 'about') {
 		$class[] = 'about';
+	} else if (get_query_var('pagename') === 'portfolio') {
+		$class[] = 'portfolio';
 	}
 	
 	return $class;
