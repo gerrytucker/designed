@@ -67,7 +67,7 @@ function work_post_type() {
 add_action( 'init', 'work_post_type', 0 );
 
 function mw_body_class($class) {
-	$post_type = 'portfolio';
+	$post_type = 'work';
 	
 	if (get_query_var('post_type') === $post_type) {
 		$class[] = $post_type;
