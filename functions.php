@@ -73,7 +73,7 @@ function mw_body_class($class) {
 		$class[] = $post_type;
 	}
 	
-	print_r(get_query_var('pagename'));
+	print_r(get_query_var('pagename', 'something'));
 	
 	if (get_query_var('pagename') === 'about') {
 		$class[] = 'about';
