@@ -79,19 +79,12 @@ function work_post_type() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
-		'rewrite'							=> array('slug' => 'job', 'with_front' => false)
+		'capability_type'     => 'page'
 	);
 	register_post_type( 'work', $args );
 
 }
 add_action( 'init', 'work_post_type', 0 );
-
-
-function mw_rewrite_flush() {
-	flush_rewrite_rules();
-}
-add_action('after_switch_theme', 'mw_rewrite_flush');
 
 
 function change_user_contact_information( $fields )
