@@ -4,8 +4,6 @@ add_theme_support( 'post-thumbnails' );
 
 function mw_body_class($classes) {
 
-	print_r(get_query_var('pagename', 'something'));
-	
 	$post_type = 'work';
 	
 	if (get_query_var('post_type') === $post_type) {
@@ -15,8 +13,8 @@ function mw_body_class($classes) {
 	if (get_query_var('pagename') === 'about') {
 		$classes[] = 'about';
 	};
-	if (get_query_var('pagename') === 'portfolio') {
-		$classes[] = 'portfolio';
+	if (get_query_var('pagename') === 'work') {
+		$classes[] = 'work';
 	}
 	
 	return $classes;
