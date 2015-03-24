@@ -5,7 +5,7 @@
 		<header class="valign-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col s10 offset-s1 m8 center-align">
+					<div class="col s10 offset-s1 center-align">
 						<h1><?php the_title(); ?></h1>
 					</div>
 				</div>
@@ -16,7 +16,7 @@
 			
 			<div class="container">
 				<div class="row">
-					<div class="col s12 m8">
+					<div class="col s12 m10 offset-m1 center-align">
 						<?php the_content(); ?>
 					</div>
 				</div>
