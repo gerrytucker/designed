@@ -15,13 +15,13 @@ Template Name: Work
 			</div>
 		</header>
 		
-		<section class="portfolio">
+		<section class="jobs">
 
 			<div class="container">
 
 			<?php
 				$count = 0;
-				$query = new WP_Query('post_type=portfolio&order=DESC&orderby=date&posts_per_page=6');
+				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=6');
 				while ($query->have_posts()) : $query->the_post();
 			?>
 
@@ -31,7 +31,7 @@ Template Name: Work
 
 			<?php endif; // $count == 0 ?>
 
-				<div class="work col s12 m4">
+				<div class="job col s12 m4">
 				
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('responsive-img')); ?></a>
 					
