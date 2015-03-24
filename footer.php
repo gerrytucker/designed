@@ -50,7 +50,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col m4 s12 center-align">
-						<p class="white-text">A Balding Designer</p>
+						<p>A Balding Designer</p>
 					</div>
 					<div class="col m4 offset-m4 s12 center-align">
 						<p>
