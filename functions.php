@@ -2,6 +2,28 @@
 
 add_theme_support( 'post-thumbnails' );
 
+function mw_body_class($classes) {
+
+	print_r(get_query_var('pagename', 'something'));
+	
+	$post_type = 'work';
+	
+	if (get_query_var('post_type') === $post_type) {
+		$classess[] = $post_type;
+	}
+	
+	if (get_query_var('pagename') === 'about') {
+		$classes[] = 'about';
+	};
+	if (get_query_var('pagename') === 'portfolio') {
+		$classes[] = 'portfolio';
+	}
+	
+	return $classes;
+}
+add_filter('body_class', 'mw_body_class');
+
+
 function mw_wp_title($title, $sep) {
 	global $paged, $page;
 	
@@ -22,7 +44,7 @@ function mw_wp_title($title, $sep) {
 	
 	return $title;
 }
-add_filter('wp_title', 'mw_wp_title');
+add_filter('wp_title', 'mw_wp_title', 10, 2);
 
 
 function work_post_type() {
@@ -66,24 +88,6 @@ function work_post_type() {
 }
 add_action( 'init', 'work_post_type', 0 );
 
-function mw_body_class($class) {
-	$post_type = 'work';
-	
-	if (get_query_var('post_type') === $post_type) {
-		$class[] = $post_type;
-	}
-	
-	print_r(get_query_var('pagename', 'something'));
-	
-	if (get_query_var('pagename') === 'about') {
-		$class[] = 'about';
-	} else if (get_query_var('pagename') === 'portfolio') {
-		$class[] = 'portfolio';
-	}
-	
-	return $class;
-}
-add_filter('body_class', 'mw_body_class');
 
 
 function change_user_contact_information( $fields )
