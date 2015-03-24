@@ -1,5 +1,7 @@
 <?php
-Template Name: Portfolio
+/*
+Template Name: Work
+*/
 ?>
 
 <?php get_header(); ?>
