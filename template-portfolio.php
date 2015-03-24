@@ -19,6 +19,7 @@ Template Name: Portfolio
 
 			<?php
 				$query = new WP_Query('post_type=portfolio&order=DESC&orderby=date&posts_per_page=6');
+				var_dump($query);
 				while ($query->have_posts()) : $query->the_post();
 			?>
 
