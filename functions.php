@@ -25,26 +25,26 @@ function mw_wp_title($title, $sep) {
 add_filter('wp_title', 'mw_wp_title');
 
 
-function portfolio_post_type() {
+function work_post_type() {
 
 	$labels = array(
-		'name'                => _x( 'Portfolio', 'Post Type General Name', 'portfolio' ),
-		'singular_name'       => _x( 'Portfolio', 'Post Type Singular Name', 'portfolio' ),
-		'menu_name'           => __( 'Portfolio', 'portfolio' ),
-		'parent_item_colon'   => __( 'Parent Item:', 'portfolio' ),
-		'all_items'           => __( 'All Items', 'portfolio' ),
-		'view_item'           => __( 'View Portfolio Item', 'portfolio' ),
-		'add_new_item'        => __( 'Add Portfolio Item', 'portfolio' ),
-		'add_new'             => __( 'Add New', 'portfolio' ),
-		'edit_item'           => __( 'Edit Portfolio Item', 'portfolio' ),
-		'update_item'         => __( 'Update Portfolio Item', 'portfolio' ),
-		'search_items'        => __( 'Search Portfolio Item', 'portfolio' ),
-		'not_found'           => __( 'Not found', 'portfolio' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'portfolio' ),
+		'name'                => _x( 'Work', 'Post Type General Name', 'work' ),
+		'singular_name'       => _x( 'Work', 'Post Type Singular Name', 'work' ),
+		'menu_name'           => __( 'Work', 'work' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'work' ),
+		'all_items'           => __( 'All Items', 'work' ),
+		'view_item'           => __( 'View Work Item', 'work' ),
+		'add_new_item'        => __( 'Add Work Item', 'work' ),
+		'add_new'             => __( 'Add New', 'work' ),
+		'edit_item'           => __( 'Edit Work Item', 'work' ),
+		'update_item'         => __( 'Update Work Item', 'work' ),
+		'search_items'        => __( 'Search Work Item', 'work' ),
+		'not_found'           => __( 'Not found', 'work' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'work' ),
 	);
 	$args = array(
-		'label'               => __( 'portfolio', 'portfolio' ),
-		'description'         => __( 'Portfolio', 'portfolio' ),
+		'label'               => __( 'Work', 'work' ),
+		'description'         => __( 'Work', 'work' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
@@ -61,10 +61,10 @@ function portfolio_post_type() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'portfolio', $args );
+	register_post_type( 'work', $args );
 
 }
-add_action( 'init', 'portfolio_post_type', 0 );
+add_action( 'init', 'work_post_type', 0 );
 
 function mw_body_class($class) {
 	$post_type = 'portfolio';
