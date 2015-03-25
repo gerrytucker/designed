@@ -23,7 +23,7 @@ Template Name: About
 
 				<div class="row">
 					
-					<div class="col s10 offset-s1 flow-text">
+					<div class="col s10 offset-s1 flow-text center-align">
 						<?php the_content(); ?>
 					</div>
 				
