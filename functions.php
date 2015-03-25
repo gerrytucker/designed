@@ -143,6 +143,12 @@ function enqueue_theme_scripts() {
 	wp_register_style('montserrat', add_query_arg($query_args, "//fonts.googleapis.com/css" ), array(), null );
 	wp_enqueue_style('montserrat');
 	
+	$query_args = array(
+		'family' => 'Open+Sans:300:latin'
+	);
+	wp_register_style('opensans', add_query_arg($query_args, "//fonts.googleapis.com/css" ), array(), null );
+	wp_enqueue_style('opensans');
+	
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 }
