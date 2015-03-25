@@ -16,7 +16,7 @@
 			
 			<div class="container">
 				<div class="row">
-					<div class="col s12 m10 offset-m1 center-align">
+					<div class="col s12 m10 offset-m1 center-align flow-text">
 						<?php the_content(); ?>
 					</div>
 				</div>
