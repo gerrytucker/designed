@@ -5,8 +5,8 @@
 				<div class="row">
 					<div class="col s10 offset-s1 center-align">
 						<p>Hi there, my name is</p>
-						<h1>Mark Walling</h1>
-						<p>A Balding Designer</p>
+						<h1><?php echo get_bloginfo('name'); ?></h1>
+						<p><?php echo get_bloginfo('description'); ?></p>
 					</div>
 				</div>
 			</div>
