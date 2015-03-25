@@ -35,19 +35,25 @@ Template Name: Work
 				
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('responsive-img')); ?></a>
 					
-				</div>
+				</div><!-- .job.col -->
 					
 			<?php $count++; ?>
 
 			<?php if ($count == 3) : $count = 0; ?>
 
-				</div>
+				</div><!-- .row -->
 
 			<?php endif; // $count == 0 ?>
 
 			<?php endwhile; // have_posts ?>
 
-			</div>
+			<?php if ($count < 3) : $count = 0; ?>
+
+				</div><!-- .row -->
+
+			<?php endif; // $count == 0 ?>
+
+			</div><!-- .container -->
 			
 		</section>
 
