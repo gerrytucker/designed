@@ -3,7 +3,7 @@
 		<header class="valign-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col s10 offset-s1 center-align">
+					<div class="col s12 m10 offset-m1 center-align">
 						<p>Hi there, my name is</p>
 						<h1><?php echo get_bloginfo('name'); ?></h1>
 						<p><?php echo get_bloginfo('description'); ?></p>
@@ -17,7 +17,7 @@
 			<div class="container">
 
 			<?php
-				$query = new WP_Query('post_type=portfolio&order=DESC&orderby=date&posts_per_page=6');
+				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=6');
 				while ($query->have_posts()) : $query->the_post();
 			?>
 
@@ -27,7 +27,7 @@
 
 			<?php endif; // $count == 0 ?>
 
-				<div class="work col s12 m4">
+				<div class="job col s12 m4">
 				
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('responsive-img')); ?></a>
 					
