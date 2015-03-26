@@ -17,7 +17,8 @@
 			<div class="container">
 
 			<?php
-				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=6');
+				$count = 0;
+				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=-1');
 				while ($query->have_posts()) : $query->the_post();
 			?>
 
@@ -29,21 +30,27 @@
 
 				<div class="job col s12 m4">
 				
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('responsive-img')); ?></a>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('class' => 'responsive-img')); ?></a>
 					
-				</div>
+				</div><!-- .job.col -->
 					
 			<?php $count++; ?>
 
 			<?php if ($count == 3) : $count = 0; ?>
 
-				</div>
+				</div><!-- .row -->
 
 			<?php endif; // $count == 0 ?>
 
 			<?php endwhile; // have_posts ?>
 
-			</div>
+			<?php if ($count < 3) : $count = 0; ?>
+
+				</div><!-- .row -->
+
+			<?php endif; // $count == 0 ?>
+
+			</div><!-- .container -->
 			
 		</section>
 

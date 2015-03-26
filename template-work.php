@@ -21,7 +21,7 @@ Template Name: Work
 
 			<?php
 				$count = 0;
-				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=6');
+				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=-1');
 				while ($query->have_posts()) : $query->the_post();
 			?>
 
@@ -33,7 +33,7 @@ Template Name: Work
 
 				<div class="job col s12 m4">
 				
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('responsive-img')); ?></a>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('class' => 'responsive-img')); ?></a>
 					
 				</div><!-- .job.col -->
 					
