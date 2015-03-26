@@ -7,7 +7,7 @@ function mw_body_class($classes) {
 	$post_type = 'work';
 	
 	if (get_query_var('post_type') === $post_type) {
-		$classess[] = $post_type;
+		$classes[] = $post_type;
 	}
 	
 	if (get_query_var('pagename') === 'about') {
