@@ -149,8 +149,8 @@ function enqueue_theme_scripts() {
 	wp_register_style('opensans', add_query_arg($query_args, "//fonts.googleapis.com/css" ), array(), null );
 	wp_enqueue_style('opensans');
 	
-	wp_register_style('icomoon', get_template_directory_uri() . '/icomoon.css', false, null, true );
-	wp_enqueue_style('icomoon');
+	// wp_register_style('icomoon', get_template_directory_uri() . '/icomoon.css', false, null, true );
+	// wp_enqueue_style('icomoon');
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
@@ -176,4 +176,4 @@ function mw_print_inline_script() {
 </script>
 <?php
 }
-add_action('wp_head', 'mw_print_inline_script');
+//add_action('wp_head', 'mw_print_inline_script');
