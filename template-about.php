@@ -11,7 +11,7 @@ Template Name: About
 		<header class="valign-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col s10 offset-s1 center-align">
+					<div class="col s12 m10 offset-m1 center-align">
 					</div>
 				</div>
 			</div>
@@ -23,7 +23,7 @@ Template Name: About
 
 				<div class="row">
 					
-					<div class="col s10 offset-s1 flow-text center-align">
+					<div class="col s12 m10 offset-m1 flow-text center-align">
 						<?php the_content(); ?>
 					</div>
 				
