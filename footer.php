@@ -1,4 +1,4 @@
-
+<!--
 		<section class="social grey lighten-5">
 			<div class="container">
 				<div class="row hide-on-small-only">
@@ -45,6 +45,7 @@
 				</div>
 			</div>
 		</section>
+-->
 
 		<footer class="page-footer grey darken-4">
 			<div class="container">
