@@ -5,6 +5,8 @@ add_theme_support( 'post-thumbnails' );
 function mw_body_class($classes) {
 
 	$post_type = 'work';
+
+	print_r(get_query_var());
 	
 	if (get_query_var('post_type') === $post_type) {
 		$classes[] = $post_type;
