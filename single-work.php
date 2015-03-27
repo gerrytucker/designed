@@ -12,7 +12,7 @@
 			</div>
 		</header>
 		
-		<section class="job">
+		<section class="single-job">
 			
 			<div class="container">
 				<div class="row">
