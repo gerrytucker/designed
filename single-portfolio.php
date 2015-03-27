@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+<?php
+	if ( $wp_query->query_vars['title'] ) {
+		$title = $wp_query->query_vars['title'];
+		var_dump($title);
+	}
+?>
+
 <?php the_post(); ?>
 
 		<header class="valign-wrapper">
