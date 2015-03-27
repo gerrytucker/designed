@@ -6,7 +6,8 @@ function mw_body_class($classes) {
 
 	$post_type = 'work';
 
-	print_r(get_query_var());
+	print_r(get_query_var('post_type'));
+	print_r(get_query_var('pagename'));
 	
 	if (get_query_var('post_type') === $post_type) {
 		$classes[] = $post_type;
