@@ -29,8 +29,6 @@ Template Name: Work
 
 				<div class="row">
 					
-					<h5>Recent Work</h5>
-
 			<?php endif; // $count == 0 ?>
 
 				<div class="job col s12 m4">
