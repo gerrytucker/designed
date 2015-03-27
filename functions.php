@@ -4,11 +4,8 @@ add_theme_support( 'post-thumbnails' );
 
 function mw_body_class($classes) {
 
-	$post_type = 'work';
+	$post_type = 'portfolio';
 
-	print_r(get_query_var('post_type'));
-	print_r(get_query_var('pagename'));
-	
 	if (get_query_var('post_type') === $post_type) {
 		$classes[] = $post_type;
 	}
@@ -16,8 +13,8 @@ function mw_body_class($classes) {
 	if (get_query_var('pagename') === 'about') {
 		$classes[] = 'about';
 	};
-	if (get_query_var('pagename') === 'work') {
-		$classes[] = 'work';
+	if (get_query_var('pagename') === 'portfolio') {
+		$classes[] = 'portfolio';
 	}
 	
 	return $classes;
@@ -48,26 +45,26 @@ function mw_wp_title($title, $sep) {
 add_filter('wp_title', 'mw_wp_title', 10, 2);
 
 
-function work_post_type() {
+function portfolio_post_type() {
 
 	$labels = array(
-		'name'                => _x( 'Work', 'Post Type General Name', 'work' ),
-		'singular_name'       => _x( 'Work', 'Post Type Singular Name', 'work' ),
-		'menu_name'           => __( 'Work', 'work' ),
-		'parent_item_colon'   => __( 'Parent Item:', 'work' ),
-		'all_items'           => __( 'All Items', 'work' ),
-		'view_item'           => __( 'View Work Item', 'work' ),
-		'add_new_item'        => __( 'Add Work Item', 'work' ),
-		'add_new'             => __( 'Add New', 'work' ),
-		'edit_item'           => __( 'Edit Work Item', 'work' ),
-		'update_item'         => __( 'Update Work Item', 'work' ),
-		'search_items'        => __( 'Search Work Item', 'work' ),
-		'not_found'           => __( 'Not found', 'work' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'work' ),
+		'name'                => _x( 'Portfolio', 'Post Type General Name', 'portfolio' ),
+		'singular_name'       => _x( 'Portfolio', 'Post Type Singular Name', 'portfolio' ),
+		'menu_name'           => __( 'Portfolio', 'portfolio' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'portfolio' ),
+		'all_items'           => __( 'All Items', 'portfolio' ),
+		'view_item'           => __( 'View Portfolio Item', 'portfolio' ),
+		'add_new_item'        => __( 'Add Portfolio Item', 'portfolio' ),
+		'add_new'             => __( 'Add New', 'portfolio' ),
+		'edit_item'           => __( 'Edit Portfolio Item', 'portfolio' ),
+		'update_item'         => __( 'Update Portfolio Item', 'portfolio' ),
+		'search_items'        => __( 'Search Portfolio Item', 'portfolio' ),
+		'not_found'           => __( 'Not found', 'portfolio' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'portfolio' ),
 	);
 	$args = array(
-		'label'               => __( 'Work', 'work' ),
-		'description'         => __( 'Work', 'work' ),
+		'label'               => __( 'Portfolio', 'portfolio' ),
+		'description'         => __( 'Portfolio', 'portfolio' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
@@ -82,13 +79,12 @@ function work_post_type() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
-		'rewrite'							=> array('slug' => 'job', 'with_front' => false)
+		'capability_type'     => 'page'
 	);
-	register_post_type( 'work', $args );
+	register_post_type( 'portfolio', $args );
 
 }
-add_action( 'init', 'work_post_type', 0 );
+add_action( 'init', 'portfolio_post_type', 0 );
 
 
 function mw_rewrite_flush() {
@@ -180,3 +176,29 @@ function mw_print_inline_script() {
 <?php
 }
 //add_action('wp_head', 'mw_print_inline_script');
+
+
+/**
+ * Allow for ID to passed to team page
+ */
+function parameter_query_vars( $vars ) {
+
+	$vars[] = 'title';
+	return $vars;
+
+}
+add_filter( 'query_vars', 'parameter_query_vars' );
+
+/**
+ * Add rewrite rule for ID passed to team page
+ */
+function add_rewrite_rules( $rules ) {
+
+	$newRules = array(
+		'work/([^/]+)/?$' => 'index.php?pagename=work&title=$matches[1]'
+	);
+	$rules = $newRules + $rules;
+	return $rules;
+
+}
+add_filter( 'rewrite_rules_array', 'add_rewrite_rules' );

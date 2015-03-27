@@ -21,7 +21,7 @@ Template Name: Work
 
 			<?php
 				$count = 0;
-				$query = new WP_Query('post_type=work&order=DESC&orderby=date&posts_per_page=-1');
+				$query = new WP_Query('post_type=portfolio&order=DESC&orderby=date&posts_per_page=-1');
 				while ($query->have_posts()) : $query->the_post();
 			?>
 
