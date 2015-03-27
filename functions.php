@@ -195,7 +195,7 @@ add_filter( 'query_vars', 'parameter_query_vars' );
 function add_rewrite_rules( $rules ) {
 
 	$newRules = array(
-		'work/([^/]+)/?$' => 'index.php?pagename=work&title=$matches[1]'
+		'portfolio/([^/]+)/?$' => 'index.php?pagename=portfolio&title=$matches[1]'
 	);
 	$rules = $newRules + $rules;
 	return $rules;
