@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <?php
-	if ( $wp_query->query_vars['title'] ) {
-		$title = $wp_query->query_vars['title'];
-		var_dump($title);
+	if ( $wp_query->query_vars['name'] ) {
+		$name = $wp_query->query_vars['name'];
+		print_r($name);
 	}
 ?>
 

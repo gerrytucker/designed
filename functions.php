@@ -183,7 +183,7 @@ function mw_print_inline_script() {
  */
 function parameter_query_vars( $vars ) {
 
-	$vars[] = 'title';
+	$vars[] = 'name';
 	return $vars;
 
 }
@@ -195,7 +195,7 @@ add_filter( 'query_vars', 'parameter_query_vars' );
 function add_rewrite_rules( $rules ) {
 
 	$newRules = array(
-		'portfolio/([^/]+)/?$' => 'index.php?pagename=portfolio&title=$matches[1]'
+		'portfolio/([^/]+)/?$' => 'index.php?pagename=portfolio&name=$matches[1]'
 	);
 	$rules = $newRules + $rules;
 	return $rules;
