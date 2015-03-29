@@ -19,10 +19,30 @@
 					<div class="col m8">
 						<ul class="inline-list right">
 							<?php wp_list_pages('sort_column=ID&title_li='); ?>
-							<?php wp_list_categories('hide_empty=0&depth=1&hierarchical=0&title_li='); ?>
+							<?php
+								$categories = get_categories();
+								foreach ($categories as $cat) :
+									if ($cat->parent < 1) :
+										$category_link = get_category_link($cat->cat_ID);
+							?>
+										<a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->category_nicename; ?>"><?php echo $cat->category_nicename; ?></a>
+							<?php
+									endif;
+								endforeach;
+							?>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		
+<?php
+    // Get the ID of a given category
+    $category_id = get_cat_ID( 'Category Name' );
+
+    // Get the URL of this category
+    $category_link = get_category_link( $category_id );
+?>
+
+<!-- Print a link to this category -->
+<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Category Name</a>
