@@ -12,7 +12,7 @@
 			</div>
 		</header>
 		
-		<section class="portfolio">
+		<section class="job">
 
 			<div class="container">
 
