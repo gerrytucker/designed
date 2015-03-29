@@ -4,18 +4,9 @@ add_theme_support( 'post-thumbnails' );
 
 function mw_body_class($classes) {
 
-	$post_type = 'portfolio';
-
-	if (get_query_var('post_type') === $post_type) {
-		$classes[] = $post_type;
-	}
-	
 	if (get_query_var('pagename') === 'about') {
 		$classes[] = 'about';
 	};
-	if (get_query_var('pagename') === 'portfolio') {
-		$classes[] = 'portfolio';
-	}
 	
 	return $classes;
 }
@@ -43,54 +34,6 @@ function mw_wp_title($title, $sep) {
 	return $title;
 }
 add_filter('wp_title', 'mw_wp_title', 10, 2);
-
-
-function portfolio_post_type() {
-
-	$labels = array(
-		'name'                => _x( 'Portfolio', 'Post Type General Name', 'portfolio' ),
-		'singular_name'       => _x( 'Portfolio', 'Post Type Singular Name', 'portfolio' ),
-		'menu_name'           => __( 'Portfolio', 'portfolio' ),
-		'parent_item_colon'   => __( 'Parent Item:', 'portfolio' ),
-		'all_items'           => __( 'All Items', 'portfolio' ),
-		'view_item'           => __( 'View Portfolio Item', 'portfolio' ),
-		'add_new_item'        => __( 'Add Portfolio Item', 'portfolio' ),
-		'add_new'             => __( 'Add New', 'portfolio' ),
-		'edit_item'           => __( 'Edit Portfolio Item', 'portfolio' ),
-		'update_item'         => __( 'Update Portfolio Item', 'portfolio' ),
-		'search_items'        => __( 'Search Portfolio Item', 'portfolio' ),
-		'not_found'           => __( 'Not found', 'portfolio' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'portfolio' ),
-	);
-	$args = array(
-		'label'               => __( 'Portfolio', 'portfolio' ),
-		'description'         => __( 'Portfolio', 'portfolio' ),
-		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
-		'taxonomies'          => array( 'category', 'post_tag' ),
-		'hierarchical'        => false,
-		'public'              => true,
-		'show_ui'             => true,
-		'show_in_menu'        => true,
-		'show_in_nav_menus'   => true,
-		'show_in_admin_bar'   => true,
-		'menu_position'       => 5,
-		'can_export'          => true,
-		'has_archive'         => true,
-		'exclude_from_search' => false,
-		'publicly_queryable'  => true,
-		'capability_type'     => 'page'
-	);
-	register_post_type( 'portfolio', $args );
-
-}
-add_action( 'init', 'portfolio_post_type', 0 );
-
-
-function mw_rewrite_flush() {
-	flush_rewrite_rules();
-}
-add_action('after_switch_theme', 'mw_rewrite_flush');
 
 
 function change_user_contact_information( $fields )
@@ -177,28 +120,3 @@ function mw_print_inline_script() {
 }
 //add_action('wp_head', 'mw_print_inline_script');
 
-
-/**
- * Allow for ID to passed to team page
- */
-function parameter_query_vars( $vars ) {
-
-	$vars[] = 'name';
-	return $vars;
-
-}
-add_filter( 'query_vars', 'parameter_query_vars' );
-
-/**
- * Add rewrite rule for ID passed to team page
- */
-function add_rewrite_rules( $rules ) {
-
-	$newRules = array(
-		'portfolio/([^/]+)/?$' => 'index.php?pagename=portfolio&name=$matches[1]'
-	);
-	$rules = $newRules + $rules;
-	return $rules;
-
-}
-add_filter( 'rewrite_rules_array', 'add_rewrite_rules' );
