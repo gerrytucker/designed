@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "icomoon.css",
+	"sources": [
+		"../icomoon.scss"
+	],
+	"sourcesContent": [],
+	"mappings": ";EAAW,AAAa;EAAW,AAAa;EAAK,AAAY;EAAQ,AAAyxI",
+	"names": []
+}
