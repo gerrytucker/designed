@@ -135,7 +135,7 @@ function mw_print_inline_script() {
  * Dequeue the Emoji script.
  */
 function disable_emoji_dequeue_script() {
-	wp_dequeue_script( 'emoji' );
+	wp_dequeue_script( 'wpemoji' );
 }
 add_action( 'wp_print_scripts', 'disable_emoji_dequeue_script', 100 );
 
