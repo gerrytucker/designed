@@ -19,6 +19,7 @@
 					<div class="col m8">
 						<ul class="inline-list right">
 							<?php wp_list_pages('sort_column=ID&title_li='); ?>
+							<?php wp_list_pages('hierarchical=0&title_li='); ?>
 						</ul>
 					</div>
 				</div>
