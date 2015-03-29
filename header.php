@@ -25,7 +25,7 @@
 									if ($cat->parent < 1) :
 										$category_link = get_category_link($cat->cat_ID);
 							?>
-										<a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->category_nicename; ?>"><?php echo $cat->category_nicename; ?></a>
+							<li><a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->category_nicename; ?></a></li>
 							<?php
 									endif;
 								endforeach;
