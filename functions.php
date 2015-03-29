@@ -130,3 +130,16 @@ function mw_print_inline_script() {
 }
 //add_action('wp_head', 'mw_print_inline_script');
 
+
+/**
+ * Dequeue the Emoji script.
+ */
+function disable_emoji_dequeue_script() {
+	wp_dequeue_script( 'emoji' );
+}
+add_action( 'wp_print_scripts', 'disable_emoji_dequeue_script', 100 );
+
+/**
+ * Remove the emoji styles.
+ */
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
