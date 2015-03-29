@@ -35,14 +35,3 @@
 				</div>
 			</div>
 		</section>
-		
-<?php
-    // Get the ID of a given category
-    $category_id = get_cat_ID( 'Category Name' );
-
-    // Get the URL of this category
-    $category_link = get_category_link( $category_id );
-?>
-
-<!-- Print a link to this category -->
-<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Category Name</a>
