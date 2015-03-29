@@ -50,10 +50,10 @@
 		<footer class="page-footer grey darken-4">
 			<div class="container">
 				<div class="row">
-					<div class="col m4 s12 center-align">
+					<div class="col s12 m6 center-align">
 						<p><?php echo get_bloginfo('description'); ?></p>
 					</div>
-					<div class="col m4 offset-m4 s12 center-align">
+					<div class="col s12 m6 center-align">
 						<p>
 						<?php
 						$email = "designed@markwalling.co.uk";
