@@ -4,11 +4,7 @@ add_theme_support( 'post-thumbnails' );
 
 function mw_body_class($classes) {
 
-	if (get_query_var('pagename') === 'home') {
-		$classes[] = 'home';
-	};
-	
-	if (get_query_var('pagename') === 'about') {
+	if (get_query_var('pagename') === 'about-me') {
 		$classes[] = 'about';
 	};
 	
