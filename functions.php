@@ -40,7 +40,7 @@ function mw_wp_title($title, $sep) {
 add_filter('wp_title', 'mw_wp_title', 10, 2);
 
 
-function change_user_contact_information( $fields )x
+function change_user_contact_information( $fields )
 {
     unset($fields['aim']);
     unset($fields['yim']);
