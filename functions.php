@@ -4,6 +4,10 @@ add_theme_support( 'post-thumbnails' );
 
 function mw_body_class($classes) {
 
+	if (get_query_var('category_name') === 'portfolio') {
+		$classes[] = 'portfolio';
+	};
+	
 	if (get_query_var('pagename') === 'about-me') {
 		$classes[] = 'about';
 	};
