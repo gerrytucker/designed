@@ -115,25 +115,14 @@ function remove_query_strings( $src ) {
 add_filter( 'script_loader_src', 'remove_query_strings', 15, 1 );
 add_filter( 'style_loader_src', 'remove_query_strings', 15, 1 );
 
-function mw_print_inline_script() {
-?>
-<script type="text/javascript">
-!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(c(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var a=document.createElement("link");a.href=o,a.rel="stylesheet",a.type="text/css",document.getElementsByTagName("head")[0].appendChild(a),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/markwalling/wp-content/themes/designed/icomoon.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();
-</script>
-<?php
+
+function html5_insert_image($html, $id, $caption, $title, $align, $url) {
+  $html5 = "<figure id='post-$id media-$id' class='align-$align'>";
+  $html5 .= "<img src='$url' alt='$title' />";
+  if ($caption) {
+    $html5 .= "<figcaption>$caption</figcaption>";
+  }
+  $html5 .= "</figure>";
+  return $html5;
 }
-//add_action('wp_head', 'mw_print_inline_script');
-
-
-/**
- * Dequeue the Emoji script.
- */
-function disable_emoji_dequeue_script() {
-	wp_dequeue_script( 'wpemoji' );
-}
-add_action( 'wp_print_scripts', 'disable_emoji_dequeue_script', 100 );
-
-/**
- * Remove the emoji styles.
- */
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
+add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
