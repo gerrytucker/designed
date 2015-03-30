@@ -20,7 +20,7 @@
 						<ul class="inline-list right">
 							<?php wp_list_pages('sort_column=ID&title_li='); ?>
 							<?php
-								$categories = get_categories();
+								$categories = get_categories('hide_empty=0');
 								foreach ($categories as $cat) :
 									if ($cat->parent < 1) :
 										$category_link = get_category_link($cat->cat_ID);
