@@ -27,7 +27,12 @@
 
 				<div class="job col s12 m4">
 				
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('class' => 'responsive-img')); ?></a>
+					<a href="<?php the_permalink(); ?>">
+						<figure>
+							<?php the_post_thumbnail('medium', array('class' => 'responsive-img')); ?>
+							<figcaption></figcaption>
+						</figure>
+					</a>
 					
 				</div><!-- .job.col -->
 					
