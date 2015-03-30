@@ -30,7 +30,7 @@
 					<a href="<?php the_permalink(); ?>">
 						<figure>
 							<?php the_post_thumbnail('medium', array('class' => 'responsive-img')); ?>
-							<figcaption></figcaption>
+							<figcaption><?php the_title(); ?></figcaption>
 						</figure>
 					</a>
 					
