@@ -17,7 +17,7 @@
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
 					<div class="col m8">
-							<a class="navbar-trigger" href="#"></a>
+							<a class="navbar-trigger right" href="#"></a>
 							<ul class="inline-list right">
 								<?php wp_list_pages('sort_column=ID&title_li='); ?>
 								<?php
