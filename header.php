@@ -17,7 +17,7 @@
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
 					<div class="col m8">
-						<div class="hide-on-small-and-down">
+							<a class="navbar-trigger" href="#"></a>
 							<ul class="inline-list right">
 								<?php wp_list_pages('sort_column=ID&title_li='); ?>
 								<?php
@@ -32,10 +32,6 @@
 									endforeach;
 								?>
 							</ul>
-						</div>
-						<div class="navbar-menu show-on-small">
-							<a class="navbar-trigger" href="#"></a>
-						</div>
 					</div>
 				</div>
 			</div>
