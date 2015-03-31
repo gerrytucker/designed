@@ -16,7 +16,7 @@
 					<div class="col s4">
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
-					<div class="col s8">
+					<div class="col s8 m8">
 						<ul class="inline-list right hide-on-small-and-down">
 							<?php wp_list_pages('sort_column=ID&title_li='); ?>
 							<?php
