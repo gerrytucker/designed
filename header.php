@@ -13,11 +13,11 @@
 		<section class="navbar">
 			<div class="container">
 				<div class="row">
-					<div class="col s4 m4">
+					<div class="col s4">
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
-					<div class="col m8 hide-on-small-and-down">
-						<ul class="inline-list right">
+					<div class="col s8">
+						<ul class="inline-list right hide-on-small-and-down">
 							<?php wp_list_pages('sort_column=ID&title_li='); ?>
 							<?php
 								$categories = get_categories('hide_empty=0');
@@ -31,8 +31,6 @@
 								endforeach;
 							?>
 						</ul>
-					</div>
-					<div class="col s4 offset-s4 show-on-small">
 						<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 						<label for="nav-trigger"></label>
 					</div>
