@@ -33,6 +33,9 @@
 								?>
 							</ul>
 						</div>
+						<div class="show-on-small">
+							<a href="navbar-menu" href="#"></a>
+						</div>
 					</div>
 				</div>
 			</div>
