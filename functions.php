@@ -114,3 +114,13 @@ function remove_query_strings( $src ) {
 }
 add_filter( 'script_loader_src', 'remove_query_strings', 15, 1 );
 add_filter( 'style_loader_src', 'remove_query_strings', 15, 1 );
+
+
+function add_image_responsive_class($content) {
+   global $post;
+   $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
+   $replacement = '<img$1class="$2 responsive-img"$3>';
+   $content = preg_replace($pattern, $replacement, $content);
+   return $content;
+}
+add_filter('the_content', 'add_image_responsive_class');
