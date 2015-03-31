@@ -13,10 +13,10 @@
 		<section class="navbar">
 			<div class="container">
 				<div class="row">
-					<div class="col s4">
+					<div class="col m4">
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
-					<div class="col s8 m8">
+					<div class="col m8">
 						<div class="hide-on-small-and-down">
 							<ul class="inline-list right">
 								<?php wp_list_pages('sort_column=ID&title_li='); ?>
@@ -33,7 +33,7 @@
 								?>
 							</ul>
 						</div>
-						<div class="show-on-small">
+						<div class="show-on-small right">
 							<a class="navbar-menu" href="#"></a>
 						</div>
 					</div>
