@@ -33,8 +33,8 @@
 								?>
 							</ul>
 						</div>
-						<div class="show-on-small right">
-							<a class="navbar-menu" href="#"></a>
+						<div class="navbar-menu show-on-small">
+							<a class="navbar-trigger" href="#"></a>
 						</div>
 					</div>
 				</div>
