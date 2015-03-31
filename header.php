@@ -31,8 +31,6 @@
 								endforeach;
 							?>
 						</ul>
-						<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-						<label for="nav-trigger"></label>
 					</div>
 					<div class="col s4 offset-s4 show-on-small">
 						<input type="checkbox" id="nav-trigger" class="nav-trigger" />
