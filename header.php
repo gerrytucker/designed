@@ -10,15 +10,14 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<section class="navbar">
+		<section class="navbar show-on-medium-and-up">
 			<div class="container">
 				<div class="row">
 					<div class="col m4">
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
-					<div class="col m8 right-align">
-							<a class="navbar-trigger right" href="#"></a>
-							<ul class="inline-list right hide-on-small-and-down">
+					<div class="col m8">
+							<ul class="inline-list right">
 								<?php wp_list_pages('sort_column=ID&title_li='); ?>
 								<?php
 									$categories = get_categories('hide_empty=0');
@@ -32,6 +31,16 @@
 									endforeach;
 								?>
 							</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="small-navbar show-on-small-and-down">
+			<div class="container">
+				<div class="row">
+					<div class="col m4">
+						<a class="navbar-trigger right" href="#"></a>
 					</div>
 				</div>
 			</div>
