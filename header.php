@@ -2,7 +2,7 @@
 <html lang="<?php bloginfo('lang'); ?>">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title><?php wp_title('|', true, 'right'); ?></title>
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -39,7 +39,8 @@
 		<section class="small-navbar">
 			<div class="container">
 				<div class="row">
-					<div class="col m4">
+					<div class="col s12">
+						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 						<a class="navbar-trigger right" href="#"></a>
 					</div>
 				</div>
