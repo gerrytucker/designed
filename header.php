@@ -16,9 +16,9 @@
 					<div class="col m4">
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
-					<div class="col m8">
+					<div class="col m8 right-align">
 							<a class="navbar-trigger right" href="#"></a>
-							<ul class="inline-list right">
+							<ul class="inline-list right hide-on-small-and-down">
 								<?php wp_list_pages('sort_column=ID&title_li='); ?>
 								<?php
 									$categories = get_categories('hide_empty=0');
