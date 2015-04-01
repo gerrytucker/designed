@@ -10,7 +10,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<section class="navbar show-on-medium-and-up">
+		<section class="navbar">
 			<div class="container">
 				<div class="row">
 					<div class="col m4">
@@ -36,7 +36,7 @@
 			</div>
 		</section>
 
-		<section class="small-navbar show-on-small-and-down">
+		<section class="small-navbar">
 			<div class="container">
 				<div class="row">
 					<div class="col m4">
