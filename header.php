@@ -17,20 +17,24 @@
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
 					</div>
 					<div class="col m8">
-							<ul class="inline-list right">
-								<?php wp_list_pages('sort_column=ID&title_li='); ?>
-								<?php
-									$categories = get_categories('hide_empty=0');
-									foreach ($categories as $cat) :
-										if ($cat->parent < 1) :
-											$category_link = get_category_link($cat->cat_ID);
-								?>
-								<li><a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></li>
-								<?php
-										endif;
-									endforeach;
-								?>
-							</ul>
+						<ul class="inline-list right">
+
+<?php wp_list_pages('sort_column=ID&title_li='); ?>
+<?php
+	$categories = get_categories('hide_empty=0');
+	foreach ($categories as $cat) :
+		if ($cat->parent < 1) :
+			$category_link = get_category_link($cat->cat_ID);
+?>
+
+							<li><a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></li>
+
+<?php
+		endif;
+	endforeach;
+?>
+
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -47,5 +51,24 @@
 			</div>
 		</section>
 
-		<section class="small-menu">
+		<section class="small-menu-container">
+			<ul class="small-menu">
+
+
+<?php wp_list_pages('sort_column=ID&title_li='); ?>
+<?php
+	$categories = get_categories('hide_empty=0');
+	foreach ($categories as $cat) :
+		if ($cat->parent < 1) :
+			$category_link = get_category_link($cat->cat_ID);
+?>
+
+				<li><a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></li>
+
+<?php
+		endif;
+	endforeach;
+?>
+
+			</ul>
 		</section>
