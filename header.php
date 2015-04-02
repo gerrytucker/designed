@@ -51,12 +51,12 @@
 			</div>
 		</section>
 
-		<section class="small-menu-container">
+		<section class="small-menu">
 			<div class="container">
 				<div class="row">
 					<div class="col s12">
 							
-						<ul class="small-menu">
+						<ul>
 
 <?php wp_list_pages('sort_column=ID&title_li='); ?>
 <?php
