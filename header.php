@@ -41,7 +41,9 @@
 				<div class="row">
 					<div class="col s12">
 						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
-						<a class="navbar-trigger right" href="#"></a>
+						<button class="lines-button arrow arrow-left" type="button" role="button" aria-label="Toggle Navigation">
+							<span class="lines"></span>
+						</button>
 					</div>
 				</div>
 			</div>
