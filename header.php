@@ -46,3 +46,6 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="small-menu">
+		</section>

@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+	<div class="content-container">
+		
 		<header class="valign-wrapper">
 			<div class="container">
 				<div class="row">
@@ -53,5 +55,7 @@
 			</div><!-- .container -->
 			
 		</section>
+
+	</div>
 
 <?php get_footer(); ?>
