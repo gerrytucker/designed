@@ -1,51 +1,3 @@
-<!--
-		<section class="social grey lighten-5">
-			<div class="container">
-				<div class="row hide-on-small-only">
-					<div class="col m2 center-align">
-						<a href="#"><span class="icomoon-twitter"></span></a>
-					</div>
-					<div class="col m2 center-align">
-						<a href="#"><span class="icomoon-facebook"></span></a>
-					</div>
-					<div class="col m2 center-align">
-						<a href="#"><span class="icomoon-google-plus"></span></a>
-					</div>
-					<div class="col m2 center-align">
-						<a href="#"><span class="icomoon-instagram"></span></a>
-					</div>
-					<div class="col m2 center-align">
-						<a href="#"><span class="icomoon-pinterest"></span></a>
-					</div>
-					<div class="col m2 center-align">
-						<a href="#"><span class="icomoon-youtube"></span></a>
-					</div>
-				</div>
-				<div class="row hide-on-med-and-up">
-					<div class="col s4 center-align">
-						<a href="#"><span class="icomoon-twitter"></span></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="#"><span class="icomoon-facebook"></span></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="#"><span class="icomoon-google-plus"></span></a>
-					</div>
-				</div>
-				<div class="row hide-on-med-and-up">
-					<div class="col s4 center-align">
-						<a href="#"><span class="icomoon-instagram"></span></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="#"><span class="icomoon-pinterest"></span></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="#"><span class="icomoon-youtube"></span></a>
-					</div>
-				</div>
-			</div>
-		</section>
--->
 
 		<footer class="page-footer grey darken-4">
 			<div class="container">
@@ -68,6 +20,8 @@
 				</div>
 			</div>
 		</footer>
+
+	</div><!-- page-wrapper -->
 
 		<?php wp_footer(); ?>
   </body>

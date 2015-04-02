@@ -10,6 +10,8 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+		<div class="page-wrapper">
+			
 		<section class="navbar">
 			<div class="container">
 				<div class="row">

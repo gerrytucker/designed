@@ -2,8 +2,6 @@
 
 <?php the_post(); ?>
 
-	<div class="content-container">
-		
 		<header class="valign-wrapper">
 			<div class="container">
 				<div class="row">
@@ -32,6 +30,4 @@
 			
 		</section>
 		
-	</div>
-
 <?php get_footer(); ?>
