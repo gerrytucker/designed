@@ -52,8 +52,11 @@
 		</section>
 
 		<section class="small-menu-container">
-			<ul class="small-menu">
-
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+							
+						<ul class="small-menu">
 
 <?php wp_list_pages('sort_column=ID&title_li='); ?>
 <?php
@@ -63,12 +66,17 @@
 			$category_link = get_category_link($cat->cat_ID);
 ?>
 
-				<li><a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></li>
+							<li><a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></li>
 
 <?php
 		endif;
 	endforeach;
 ?>
 
-			</ul>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+						
 		</section>
