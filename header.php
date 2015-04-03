@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php bloginfo('lang'); ?>">
+<html lang="<?php bloginfo('language'); ?>">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col m4">
-						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
+						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling">Mark Walling</a>
 					</div>
 					<div class="col m8">
 						<ul class="inline-list right">
@@ -46,7 +46,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col s12">
-						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling" rel="homepage">Mark Walling</a>
+						<a class="brand" href="<?php echo get_bloginfo('url'); ?>" title="Mark Walling">Mark Walling</a>
 						<a class="navbar-trigger right" href="#"></a>
 					</div>
 				</div>
