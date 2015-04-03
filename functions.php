@@ -90,7 +90,7 @@ function enqueue_theme_scripts() {
 	wp_enqueue_style('montserrat');
 	
 	$query_args = array(
-		'family' => 'Open+Sans:300:latin'
+		'family' => 'Open+Sans:400:latin'
 	);
 	wp_register_style('opensans', add_query_arg($query_args, "//fonts.googleapis.com/css" ), array(), null );
 	wp_enqueue_style('opensans');
